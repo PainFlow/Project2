@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер изображений</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎨 Галерея изображений</h1>
+        
+        <div class="slider-container">
+            <div class="slider">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" 
+                     alt="Пейзаж 1" 
+                     class="slider-image" 
+                     id="slider-image">
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn" id="prevBtn">
+                    <span class="arrow">←</span>
+                </button>
+                
+                <div class="slider-indicator" id="imageIndicator">
+                    Изображение 1 из 6
+                </div>
+                
+                <button class="slider-btn next-btn" id="nextBtn">
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="image-counter" id="imageCounter">
+            <span class="current" id="currentImage">1</span> / 
+            <span class="total" id="totalImages">6</span>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
